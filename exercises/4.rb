@@ -16,6 +16,7 @@
 # "I would like #{number_of_tacos} tacos, please"
 # No more worrying about converting numbers to strings!
 
+
 weather_data = {
   current: {
     temperature: 67,
@@ -27,3 +28,9 @@ weather_data = {
   ]
 }
 
+todays_temp = weather_data[:current][:temperature]
+todays_conditions = weather_data[:current][:conditions]
+
+puts "Currently, the temperature is #{todays_temp} and #{todays_conditions}."
+puts "Tomorrow, the temperature will be #{weather_data[:forecast][0][:temperature]} and #{weather_data[:forecast][0][:conditions]}."
+puts "While Tuesday, the temperature will be #{weather_data[:forecast][1][:temperature]} and #{weather_data[:forecast][1][:conditions]}."

@@ -15,3 +15,11 @@
 # Learn to read the documentation!
 # http://ruby-doc.org/core-2.5.1/Array.html
 
+curt_list = ["dog food", "beer"]
+kristin_list = ["eggs", "almond milk", "beer"]
+shopping_list = curt_list + kristin_list
+sorted_list = shopping_list.sort
+final_list = sorted_list.uniq
+
+puts final.list
+

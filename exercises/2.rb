@@ -27,3 +27,15 @@
 # We can specify multiple conditions with || (OR) and && (AND)
 # if dinner == "tacos" || dinner == "pizza"
 
+dice_1 = rand(1..6)
+dice_2 = rand(1..6)
+sum = dice_1 + dice_2
+
+puts "That's #{sum},"
+if sum == 7 or sum == 11
+    puts "you win"
+elsif sum == 2 || sum == 3 || sum == 12
+    puts "CRAPS, You lose!!"
+else    
+    puts "Point #{sum}"
+end
